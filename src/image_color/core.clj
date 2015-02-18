@@ -38,11 +38,14 @@
 ; K - m e a n s
 ; K - m e a n s
 ; K - m e a n s
-(defn k-means [image clusters]
+(defn k-means [image num-clusters]
   "
   Run K-Means clustering
+  @param image
+  @param num-clusters
+  @return vector of clusters
   "
-  )
+  nil)
 
 
 ; M a i n

@@ -35,6 +35,8 @@
   "
   Resize a Buffered Image
   @param buffered-image BufferedImage a buffered image to shrink
+  @param width integer an integer specifying the new image's width
+  @param height integer an integer specifying the new image's height
   @return BufferedImage a new buffered with dimensions width height
   "
   (Scalr/resize (buffered-image image) Scalr$Mode/FIT_EXACT width height nil))
