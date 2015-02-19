@@ -3,7 +3,8 @@
            [org.imgscalr Scalr$Method Scalr$Mode]
            [java.io File]
            [javax.imageio ImageIO]
-           [java.awt.image BufferedImage Color])
+           [java.awt.image BufferedImage]
+           [java.awt Color])
 
   (:require [clojure.math.numeric-tower :as math]
             [clojure.java.io :as io]))
@@ -40,8 +41,8 @@
 ;; r a n d o m - p o i n t
 
 (defn random-point [buffered-image]
-  [(rand-int 0 (.getWidth buffered-image))
-   (rand-int 0 (.getHeight buffered-image))])
+  {:x (rand-int 0 (.getWidth buffered-image))
+   :y (rand-int 0 (.getHeight buffered-image))})
 
 ;; r a n d o m - s a m p l e - p i x e l s
 ;; r a n d o m - s a m p l e - p i x e l s

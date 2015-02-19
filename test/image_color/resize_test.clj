@@ -6,6 +6,7 @@
 ;; t e s t e m p t y i m a g e
 ;; t e s t e m p t y i m a g e
 ;; t e s t e m p t y i m a g e
+
 (deftest trivial-image-size
   (testing "image size of empty image"
     (let [image-size (get-image-size nil)]
@@ -15,6 +16,7 @@
 ;; t e s t s a m p l e i m a g e
 ;; t e s t s a m p l e i m a g e
 ;; t e s t s a m p l e i m a g e
+
 (deftest flex-image-size
   (testing "image size of a resource"
     (let [buffered-image (javax.imageio.ImageIO/read (io/resource "flex-.jpg"))]
@@ -25,6 +27,7 @@
 ;; t e s t r e s i z e
 ;; t e s t r e s i z e
 ;; t e s t r e s i z e
+
 (deftest flex-image-scale
   (testing "resize image resource and check size"
     (let [buffered-image (javax.imageio.ImageIO/read (io/resource "flex-.jpg"))]
